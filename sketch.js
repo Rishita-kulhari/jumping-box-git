@@ -2,6 +2,8 @@ var canvas;
 var music;
 var block1, block2, block3, block4;
 var box,edges;
+var platform;
+
 
 function preload(){
     music = loadSound("music.mp3");
@@ -22,6 +24,9 @@ block3.shapeColor = "blue";
 
 block4=createSprite(710,580,200,25);
 block4.shapeColor = "yellow";
+
+platform=createSprite(300,300,50,50);
+platform.shapeColor = "black";
 
     //create box sprite and give velocity
 box=createSprite(random(20,750),200,25,25);
